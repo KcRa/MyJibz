@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/action_bar"
+        android:background="#ffc10d"
+        android:elevation="4dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="تازه‌ترین تراکنش"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/close_trnzEntry"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#000000"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/logd_usr_name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/action_bar"
+        android:gravity="bottom"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/logd_usr_name"
+        android:background="@color/colorPrimaryDark"
+        />
+
+    <RelativeLayout
+        android:id="@+id/block_acc_spiner"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/logd_usr_name"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حساب پولی"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:layout_above="@id/spiner_acc_name"
+            android:textSize="12dp"
+            />
+        <Spinner
+            android:id="@+id/spiner_acc_name"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/block_acc_source"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/block_acc_spiner"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="از / به "
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_above="@id/TxtVu_src_name"
+            android:textSize="12dp"
+            />
+
+        <EditText
+            android:id="@+id/TxtVu_src_name"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/cardview_light_background"
+            android:hint="نام مقصد پرداخت یا مبدا دریافت"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            >
+        </EditText>
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/block_date"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/block_acc_source"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تاریخ"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_above="@id/TxtVu_date"
+            android:textSize="12dp"
+            />
+
+        <EditText
+            android:id="@+id/TxtVu_date"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/cardview_light_background"
+            android:ems="10"
+            android:hint="تاریخ تراکنش"
+            android:inputType="date"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16dp"></EditText>
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/block_describe"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/block_date"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="توضیحات"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_above="@id/TxtVu_describe"
+            android:textSize="12dp"
+            />
+
+        <EditText
+            android:id="@+id/TxtVu_describe"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/background_light"
+            android:hint="توضیحات"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16dp"></EditText>
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/block_amount"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/block_describe">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/TxtVu_amount"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="مبلغ"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/TxtVu_amount"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/background_light"
+            android:hint="مبلغ تراکنش"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16dp"></EditText>
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/block_impout"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/block_amount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_impuot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:text="Switch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_centerVertical="true"
+            android:text="پرداخت"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="دریافت"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ent_trnz_data"
+        android:layout_width="240dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/block_impout"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner_login"
+        android:text="درج تراکنش"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        />
+
+
+
+
+</RelativeLayout>

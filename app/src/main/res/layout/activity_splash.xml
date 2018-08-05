@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kcra.myjibz.Splash"
+    android:background="#f0f0f0"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wallet_on_pocket001"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
+        android:src="@drawable/jibz_splash"
+        android:id="@+id/splash_logo"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/splash_logo"
+        android:layout_marginTop="@dimen/margintop_title"
+        android:text="برنامه‌ی ناناز حسابداری برای جوانان"
+        android:textSize="@dimen/title_txt_size"
+        android:textStyle="bold"
+        android:textColor="#282828"
+        />
+
+</RelativeLayout>

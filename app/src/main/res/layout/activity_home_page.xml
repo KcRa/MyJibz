@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/go_to_income"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corner_login"
+        android:text="فهرست درآمدها"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:paddingTop="12dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/btn_new_record"
+        android:layout_below="@id/go_to_income"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corner_login"
+        android:text="ثبت حساب تازه"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:paddingTop="12dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/btn_to_transaction"
+        android:layout_below="@id/btn_new_record"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corner_login"
+        android:text="تراکنش‌ها"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:paddingTop="12dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/card_to_card"
+        android:layout_below="@id/btn_to_transaction"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corner_login"
+        android:text="تراکنش‌ها"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:paddingTop="12dp"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/action_bar"
+        android:background="#ffc10d"
+        android:elevation="4dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/jibz_logo_action_bar"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_drawer"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_menu_black_48dp"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#000000"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/action_bar"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/user_title"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="#ffc10d">
+
+                <ImageView
+                    android:id="@+id/user_foto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bigbelly_man"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/title_usr_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_foto"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#1a1a1a"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#2d2d2d"></View>
+
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/button001"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="فرستادن پیامک برای ما"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button002"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="دریافت پیامک از ما"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button003"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="امنیت"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button004"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="فونت و اندازه"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button005"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="واحد پول"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button006"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="مدیریت نسخه‌های پشتیبان"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button007"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="حذف اطلاعات"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button008"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="راهنما"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button009"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="ارتباط با ما"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button010"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="درباره‌ی ما"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/button011"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="جیبز در اینستاگرام"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/log_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="خروج از حساب کاربری"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/exit_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#e1e1e1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_chevron_left_black_48dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:text="خروج از برنامه"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1px"
+                            android:layout_alignParentBottom="true"
+                            android:background="#2d2d2d"></View>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

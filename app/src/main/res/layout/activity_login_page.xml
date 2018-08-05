@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/action_bar"
+        android:background="#ffc10d"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="ورود"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#283c69"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#000000"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/wallet_on_pocket002"
+        android:scaleType="centerCrop"
+        >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar"
+        >
+        <ImageView
+            android:layout_width="@dimen/logo_size_login"
+            android:layout_height="@dimen/logo_size_login"
+            android:id="@+id/jibz_logo"
+            android:src="@drawable/jibz_logo_in_yelow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginLeft="@dimen/margin_lrse_edittext"
+            android:layout_marginRight="@dimen/margin_lrse_edittext"
+            android:layout_marginStart="@dimen/margin_lrse_edittext"
+            android:layout_marginEnd="@dimen/margin_lrse_edittext"
+            android:hint="نام کاربری"
+            android:textSize="@dimen/edittext_size"
+            android:textColorHint="#282828"
+            android:padding="4dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_below="@id/username"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginLeft="@dimen/margin_lrse_edittext"
+            android:layout_marginRight="@dimen/margin_lrse_edittext"
+            android:layout_marginStart="@dimen/margin_lrse_edittext"
+            android:layout_marginEnd="@dimen/margin_lrse_edittext"
+            android:hint="رمز ورود"
+            android:textSize="@dimen/edittext_size"
+            android:textColorHint="#282828"
+            android:padding="4dp"
+            android:inputType="text"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttons"
+            android:layout_below="@id/password"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_lrse_edittext"
+            android:layout_marginRight="@dimen/margin_lrse_edittext"
+            android:layout_marginStart="@dimen/margin_lrse_edittext"
+            android:layout_marginEnd="@dimen/margin_lrse_edittext"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/register"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_corner_login"
+                android:text="نام‌نویسی"
+                android:textSize="@dimen/edittext_size"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/login"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_corner_login"
+                android:text="ورود"
+                android:textSize="@dimen/edittext_size"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

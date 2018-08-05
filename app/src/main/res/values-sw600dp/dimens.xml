@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="logo_size">220dp</dimen>
+    <dimen name="title_txt_size">24dp</dimen>
+    <dimen name="margintop_title">40dp</dimen>
+
+
+    <dimen name="logo_size_login">220dp</dimen>
+    <dimen name="margin_top_username">60dp</dimen>
+    <dimen name="margin_lrse_edittext">60dp</dimen>
+    <dimen name="edittext_size">16dp</dimen>
+
+
+
+
+</resources>
